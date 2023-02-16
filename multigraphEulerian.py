@@ -15,5 +15,5 @@ def multigraphEulerian(graph, src=0):
         return C1[:u] + C2 + C1[u + 1:]
     C = cycle(graph, src)
     while len(toVisit:=[v for v in C if len(graph[v]) > 0]) > 0:
-        C = fusion(C, cycle(graph, toVisit[src]))
+        C = fusion(C, cycle(graph, toVisit[0]))
     return C
