@@ -23,6 +23,7 @@ int dp[MAX][MAX][MAX];
 void test2(){
     memset(dp, -1, sizeof dp);
     vector<int> price(MAX, -1), pages(MAX, -1);
+    double max = *max_element(price.begin(), price.end());
     vector<vector<int> > dp(n+1,vector<int>(MAX+1,0));
 }
 
